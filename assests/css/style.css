@@ -325,7 +325,8 @@ section {
 }
 
 #about-svg {
-  width: 90%;
+  width: 85%;
+  margin-bottom: -12em;
 }
 
 .contact {
