@@ -101,8 +101,8 @@ section {
   height: 200px;
   border-radius: 50%;
   background: #C7C0F5;
-  top: 0;
-  left: 0;
+  top: 3.5rem;
+  left: 5rem;
   z-index: -1;
 }
 
