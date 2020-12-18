@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -301,5 +305,52 @@ section {
   100% {
     width: 75%;
   }
+}
+
+#about-section {
+  padding-top: 0;
+}
+
+#about-section .about-left h1 {
+  font-size: 40px;
+}
+
+#about-section .about-left p {
+  font-size: 18px;
+}
+
+#about-section .about-right .about-sub-text {
+  margin-top: 6em;
+  font-size: 20px;
+}
+
+#about-svg {
+  width: 90%;
+}
+
+.contact {
+  height: 25rem;
+  background: #6007C5;
+}
+
+.contact h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact .social {
+  font-size: 35px;
+  margin-top: 1.1em;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 0.7em;
+}
+
+.contact .per-contact {
+  margin-top: 5em;
 }
 /*# sourceMappingURL=style.css.map */
