@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body{
+	height: 100vh;
+	margin: 0;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+.nav-container{
+	background: #6007C5;
+
+	a{
+		color: #fff;
+	}
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+
+	.logo{
+		color: #51FF9B;
+		font-weight: bold;
+	}
+
+	ul{
+		display: flex;
+
+		a{
+			display: block;
+			padding: 0 1em;
+		}
+	}
+}
+
+.social-header, .hero-design{
+	display: none;
+}
+
+.hero{
+	background: #6A00E3;
+	color: #fff;
+	display: grid;
+	text-align: center;
+	padding: 4em;
+}
+
+.meet{
+	display: flex;
+	margin: 0 auto;
+	width: 200px;
+	font-weight: bold;
+	color: #FFF24A;
+
+	span{
+		margin: 1em .5em 0 0;
+	}
+}
+
+.scroll{
+	width: 30px;
+	margin-top: 2em;
+}
+
+section{
+	padding: 4em 2em;
+	text-align: center;
+}
+
+.featured{
+	position: relative;
+}
+.featured::before{
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: #C7C0F5;
+	top: 10;
+	left: 60px;
+	z-index: -1;
+}
+
+.skill-heading{
+	font-size: 50px;
+}
+
+.skill-text{
+	margin-top: -2em;
+}
+
+// .skill-svg{
+// 	width: 400px;
+// }
+
+.skill-box{
+	background: #504F51;
+	height: 50vh;
+	margin: 5em 1em;
+	border-radius: 20px;
+	text-align: left;
+
+	li{
+
+		p{
+			margin-left: 2.5em;
+			color: #fff;
+			display: inline-block;
+		}
+
+		.skill-row{
+			background: #fff;
+			display: inline-block;
+			height: 17px;
+			width: 57%;
+			margin-top: 1.2em;
+			border-radius: 15px;
+		}
+	}	
+}
+
+#html{
+	padding-top: 1.4em;
+}
+
+#html .skill-row{
+	margin-left: 2.9em;
+}
+
+#mern .skill-row{
+	margin-left: 2.75em;
+}
+
+#java .skill-row{
+	margin-left: 2.9em;
+}
+
+#solidity .skill-row{
+	margin-left: 1.8em;
+}
+
+#data .skill-row{
+	margin-left: 2.9em;
+}
+
+#analysis {
+	color: #fff;
+	margin-left: 1.65em;
+	margin-top: -1em;
+}
+
+.skill-value{
+	height: 17px;
+	background: #ee0979;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 20px;
+}
+
+#html .skill-value{
+	width: 90%;
+	animation: html 3s ease-out;
+}
+
+#mern .skill-value{
+	width: 77%;
+	animation: mern 3s ease-out;
+}
+
+#java .skill-value{
+	width: 90%;
+	animation: java 3s ease-out;
+}
+
+#solidity .skill-value{
+	width: 60%;
+	animation: solidity 3s ease-out;
+}
+
+#data .skill-value{
+	width: 75%;
+	animation: data 3s ease-out;
+}
+
+@keyframes html{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 90%;
+	}
+}
+
+@keyframes mern{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 77%;
+	}
+}
+
+@keyframes java{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 90%;
+	}
+}
+
+@keyframes solidity{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 60%;
+	}
+}
+
+@keyframes data{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 75%;
+	}
+}
