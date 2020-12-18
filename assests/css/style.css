@@ -44,6 +44,7 @@ header {
 header .logo {
   color: #51FF9B;
   font-weight: bold;
+  font-size: 15px;
 }
 
 header ul {
@@ -55,6 +56,7 @@ header ul {
 header ul a {
   display: block;
   padding: 0 1em;
+  font-size: 13px;
 }
 
 .social-header, .hero-design {
