@@ -600,20 +600,29 @@ section{
 			text-align: left;
 			padding-left: 10em;
 		}
+	}
 
-		.about-right{
-			.about-sub-text{
-				margin-top: 0;
-			}
-		}
+	#about-section{
+		padding-bottom: 0;
+	}
+
+	#about-section .about-right .about-sub-text {
+		margin-top: 0;
 	}
 
 	.contact{
-		height: 8em;
+		height: 10em;
 
 		.contact-left, .contact-right{
 			margin-top: -1.5em;
 		}
+	}
+
+	.bottom-svg{
+		padding-top: 0;
+		margin-top: -7em;
+		z-index: -1;
+		position: relative;
 	}
 }
 
