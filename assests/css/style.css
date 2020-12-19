@@ -389,14 +389,14 @@ section {
 }
 
 .contact {
-  height: 25rem;
+  height: 22rem;
   background: #6007C5;
 }
 
 .contact h3 {
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
+  color: #51FF9B;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .contact .social {
