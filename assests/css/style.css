@@ -127,8 +127,10 @@ section {
   background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
   background: linear-gradient(to right, #434343, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
   height: 22.5rem;
-  margin: 5em 1em;
+  width: 95%;
+  margin: 5em auto;
   border-radius: 20px;
   text-align: left;
 }
@@ -141,9 +143,10 @@ section {
 
 .skill-box li .skill-row {
   background: #fff;
+  position: absolute;
   display: inline-block;
   height: 17px;
-  width: 57%;
+  width: 60%;
   margin-top: 1.2em;
   border-radius: 15px;
 }
@@ -422,5 +425,129 @@ section {
 .fab:hover, .fas:hover {
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
+}
+
+@media only screen and (min-width: 600px) {
+  #about-svg {
+    margin-bottom: -8em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  header .logo {
+    font-size: 15px;
+  }
+  header ul a {
+    font-size: 15px;
+  }
+  .skill-box {
+    width: 70%;
+  }
+  .extra-skill-box {
+    display: inline-block;
+    margin: auto 3em;
+  }
+  #about-svg {
+    margin-bottom: -6em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    margin: auto initial;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #6007C5;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul i {
+    font-size: 25px;
+    color: #000000;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #6A00E3;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 2.7em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

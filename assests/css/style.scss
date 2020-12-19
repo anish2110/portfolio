@@ -119,8 +119,10 @@ section{
 	background: #000000;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: relative;
 	height: 22.5rem;
-	margin: 5em 1em;
+	width: 95%;
+	margin: 5em auto;
 	border-radius: 20px;
 	text-align: left;
 
@@ -134,9 +136,10 @@ section{
 
 		.skill-row{
 			background: #fff;
+			position: absolute;
 			display: inline-block;
 			height: 17px;
-			width: 57%;
+			width: 60%;
 			margin-top: 1.2em;
 			border-radius: 15px;
 		}
@@ -376,4 +379,147 @@ section{
 
 .fab:hover, .fas:hover{
 	transform: rotate(720deg);
+}
+
+@media only screen and (min-width: 600px){
+	#about-svg{
+		margin-bottom: -8em;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	header{
+		.logo{
+			font-size: 15px;
+		}
+
+		ul{
+			a{
+				font-size: 15px;
+			}
+		}
+	}
+
+	.skill-box{
+		width: 70%;
+	}
+
+	.extra-skill-box{
+		display: inline-block;
+		margin: auto 3em;
+	}	
+
+	#about-svg{
+		margin-bottom: -6em;
+	}
+}
+
+@media only screen and (min-width: 1050px){
+	.hero{
+		height: 90vh;
+	}
+
+	.nav-container{
+		margin: auto initial;
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+
+		header{
+			background: #6007C5;
+		}
+	}
+
+	header{
+		padding: 2em 2em 2em 4em;
+	}
+
+	.social-header{
+		padding: 2em 4em 2em 0;
+	}
+
+	section{
+		padding: 4em;
+	}
+
+	.social-header{
+		display: block;
+
+		ul{
+			display: flex;
+			justify-content: space-between;
+			width: 7em;
+			float: right;
+
+			i{
+				font-size: 25px;
+				color: #000000;
+			}
+		}
+	}
+
+	.hero{
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+		padding: 0;
+
+		.content{
+			background:#6A00E3;
+			padding: 6em 8em 6em 4em;
+			text-align: left;
+
+			h1{
+				font-size: 2.7em;
+				line-height: 1.2em;
+			}
+		}
+	}
+
+	.meet{
+		margin: unset;
+	}
+
+	.hero-design{
+		display: unset;
+		margin-left: -50%;
+		margin-top: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1250px){
+	header{
+		padding: 2em 2em 2em 10em;
+	}
+
+	.social-header{
+		padding: 2em 10em 2em 0;
+	}
+
+	section{
+		padding: 10em 10em 4em 10em;
+	}
+
+	.hero .content{
+		padding: 6em 8em 6em 10em;
+	}
+}
+
+@media only screen and(min-width: 1550px){
+	header{
+		padding: 2em 2em 2em 20em;
+	}
+
+	.social-header{
+		padding: 2em 20em 2em 0;
+	}
+
+	section{
+		padding: 6em 20em 4em 20em;
+	}
+
+	.hero .content{
+		padding: 9em 20em 6em 20em;
+	}
 }
