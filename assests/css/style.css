@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&family=Roboto+Mono&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +6,7 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: 'Andika New Basic', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -70,6 +70,34 @@ header ul a {
   display: grid;
   text-align: center;
   padding: 4em;
+}
+
+#head-h1-1 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+#head-h1-2 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+#head-h1-3 {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+#creativity {
+  font-family: 'Langar';
+  font-weight: 100;
+  font-size: 62px;
+  color: #edffdb;
+}
+
+#inno {
+  font-family: 'Roboto Mono';
+  font-weight: 200;
+  font-size: 62px;
 }
 
 .meet {
@@ -312,6 +340,10 @@ section {
   }
 }
 
+.right-svg {
+  display: none;
+}
+
 #about-section {
   padding-top: 0;
 }
@@ -486,7 +518,7 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 7em;
+    width: 8em;
     float: right;
   }
   .social-header ul i {
@@ -519,6 +551,37 @@ section {
     margin-top: 0;
     width: 100%;
   }
+  .featured {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% auto;
+        grid-template-columns: 45% auto;
+    margin-bottom: 7em;
+  }
+  .featured .left {
+    margin-top: 7em;
+  }
+  .featured::before {
+    top: 0;
+    left: 0;
+  }
+  .skill-box {
+    height: 21.5em;
+    width: 80%;
+  }
+  #about-svg {
+    margin-bottom: -4em;
+  }
+  .contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    height: 13em;
+  }
+  .contact .per-contact {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -529,10 +592,53 @@ section {
     padding: 2em 10em 2em 0;
   }
   section {
-    padding: 10em 10em 4em 10em;
+    padding: 5em 5em 4em 5em;
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+  .featured {
+    -ms-grid-columns: 35% auto;
+        grid-template-columns: 35% auto;
+  }
+  .right {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .right-svg {
+    display: block;
+    width: 20em;
+    margin-left: -4em;
+    padding-right: 0;
+    margin-top: -0.8em;
+  }
+  .skill-box {
+    width: 60%;
+    padding-left: -2em;
+    margin-left: 0;
+  }
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% auto;
+        grid-template-columns: 33% auto;
+  }
+  .about .about-left {
+    text-align: left;
+    padding-left: 10em;
+  }
+  .about .about-right .about-sub-text {
+    margin-top: 0;
+  }
+  .contact {
+    height: 8em;
+  }
+  .contact .contact-left, .contact .contact-right {
+    margin-top: -1.5em;
   }
 }
 
