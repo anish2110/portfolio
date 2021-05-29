@@ -975,7 +975,7 @@ header .global-nav__list {
 header .global-nav__list li {
   margin-top: 7.2rem;
   position: relative;
-  padding: 0 153px;
+  padding: 0 123px;
   overflow: hidden;
 }
 header .global-nav__list li:first-child {
@@ -2089,6 +2089,11 @@ header .global-nav__sns a:last-child {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+@media screen and (max-width: 7500px) {
+    .footer a {
+      font-size: 2rem;
+    }
+  }
 @media screen and (max-width: 420px) {
   .footer a {
     font-size: 1.2rem;
